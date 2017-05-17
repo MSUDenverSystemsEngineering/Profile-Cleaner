@@ -132,10 +132,10 @@ Try {
 		}
 		
 		## <Perform Installation tasks here>
-		Set-RegistryKey -Key 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run' -Name 'Profile Cleaner' -Value '"C:\ProgramData\Delprof2.exe" /ed:admin /ed:default /ed:itsadmin /ed:infotech /D:150 /q' -Type String
+		Set-RegistryKey -Key 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run' -Name 'Profile Cleaner' -Value '"C:\ProgramData\Delprof2.exe" /ed:admin /ed:itsadmin /ed:infotech /D:90 /q' -Type String
 
 		##quietly delete all profiles not updated in the last 150 days; exception: default, admin*, itsadmin, infotech
-		
+
 		##*===============================================
 		##* POST-INSTALLATION
 		##*===============================================
